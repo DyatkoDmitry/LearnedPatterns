@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LearnedPatterns</string>
+    <string name="LearnedPatterns">Learned patterns:\n</string>
+    <string name="builder">Builder</string>
+    <string name="coffee_screen_builder">Coffee Screen Builder:</string>
+    <string name="brown_sugar_coffee">Brown Sugar Coffee</string>
+    <string name="flat_white_coffee">Flat White Coffee</string>
+    <string name="frappe_coffee">Frappe Coffee</string>
+    <string name="mocco_coffee">Mocco Coffee</string>
+    <string name="singleton">Singleton</string>
+</resources>
