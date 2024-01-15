@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LearnedPatterns"
         tools:targetApi="31">
         <activity
+            android:name=".factoryMethod.FactoryMethodActivity"
+            android:exported="false" />
+        <activity
             android:name=".singletonPattern.SingletonActivity"
             android:exported="false" />
         <activity

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.learnedpatterns.builderPattern.BuilderActivity
 import com.example.learnedpatterns.databinding.ActivityMainBinding
+import com.example.learnedpatterns.factoryMethod.FactoryMethodActivity
 import com.example.learnedpatterns.singletonPattern.SingletonActivity
 
 class MainActivity : AppCompatActivity() {
@@ -27,5 +28,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentSingleton)
         }
 
+        binding.factoryMethodButton.setOnClickListener {
+            val intentFactoryMethod = Intent(this, FactoryMethodActivity::class.java)
+            startActivity(intentFactoryMethod)
+        }
     }
 }
