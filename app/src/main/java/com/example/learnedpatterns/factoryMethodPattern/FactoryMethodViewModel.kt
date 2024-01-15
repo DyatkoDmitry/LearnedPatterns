@@ -1,4 +1,4 @@
-package com.example.learnedpatterns.factoryMethod
+package com.example.learnedpatterns.factoryMethodPattern
 
 import androidx.lifecycle.ViewModel
 

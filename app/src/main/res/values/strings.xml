@@ -10,4 +10,5 @@
     <string name="singleton">Singleton</string>
     <string name="kotlin_singleton_sun">Kotlin singleton Sun</string>
     <string name="factory_method">Factory Method</string>
+    <string name="factory_method_screen">Factory Method screen:</string>
 </resources>

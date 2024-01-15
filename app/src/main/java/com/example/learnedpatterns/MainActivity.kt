@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.learnedpatterns.builderPattern.BuilderActivity
 import com.example.learnedpatterns.databinding.ActivityMainBinding
-import com.example.learnedpatterns.factoryMethod.FactoryMethodActivity
+import com.example.learnedpatterns.factoryMethodPattern.FactoryMethodActivity
 import com.example.learnedpatterns.singletonPattern.SingletonActivity
 
 class MainActivity : AppCompatActivity() {
