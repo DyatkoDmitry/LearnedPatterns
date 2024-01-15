@@ -6,11 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".singletonPattern.SingletonActivity">
 
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/singletonScreenTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="454dp"
-        tools:layout_editor_absoluteY="140dp" />
+        android:layout_marginTop="64dp"
+        android:text="Singleton screen:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kotlinSingletonButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/kotlin_singleton_sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singletonScreenTextView" />
+
+    <Button
+        android:id="@+id/javaSingletonButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Java singleton Sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotlinSingletonButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

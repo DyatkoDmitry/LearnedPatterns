@@ -8,4 +8,5 @@
     <string name="frappe_coffee">Frappe Coffee</string>
     <string name="mocco_coffee">Mocco Coffee</string>
     <string name="singleton">Singleton</string>
+    <string name="kotlin_singleton_sun">Kotlin singleton Sun</string>
 </resources>
