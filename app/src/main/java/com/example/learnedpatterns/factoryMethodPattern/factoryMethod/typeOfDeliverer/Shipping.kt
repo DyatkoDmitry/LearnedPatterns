@@ -1,9 +1,7 @@
 package com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer
 
-class Shipping(
-    override val companyName: String,
-    override val maxCapacity: Long,
-    override val maxSize: Long
-) : Deliverer() {
+import com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer.shipping.TypeOfShipping
 
-}
+abstract class Shipping(
+    val typeOfShipping: TypeOfShipping
+) : Deliverer()

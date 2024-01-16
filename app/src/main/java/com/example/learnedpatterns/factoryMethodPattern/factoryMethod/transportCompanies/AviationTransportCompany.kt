@@ -3,11 +3,12 @@ package com.example.learnedpatterns.factoryMethodPattern.factoryMethod.transport
 import com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer.Aviation
 import com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer.aviation.Mode
 import com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer.aviation.Traffic
+import kotlin.math.max
 
-class AviationTransportCompany1(
-    override val companyName: String = "Aviation transport company 1",
+class AviationTransportCompany(
+    override val companyName: String = "Specific aviation transport company",
     override val maxCapacity: Long = 561,
     override val maxSize: Long = 350,
-    traffic: Traffic = Traffic.INTERCITY,
-    mode: Mode = Mode.FREIGHT
-) : Aviation(traffic, mode)
+    mode: Mode = Mode.FREIGHT,
+    traffic: Traffic = Traffic.INTERCITY
+) : Aviation (mode, traffic)

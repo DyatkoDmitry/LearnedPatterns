@@ -2,8 +2,8 @@ package com.example.learnedpatterns.factoryMethodPattern.factoryMethod.transport
 
 import com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer.Automobile
 
-class AutomobileTransportCompany1 : Automobile(
-    "Specific automobile company 1",
-    3000,
-    5000
-)
+class AutomobileTransportCompany(
+    override val companyName: String = "Specific road transport company",
+    override val maxCapacity: Long = 8000,
+    override val maxSize: Long = 3100
+) : Automobile()

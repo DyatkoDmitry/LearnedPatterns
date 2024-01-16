@@ -1,9 +1,9 @@
 package com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer
 
-class Aviation(
-    override val companyName: String,
-    override val maxCapacity: Long,
-    override val maxSize: Long
-) : Deliverer() {
+import com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer.aviation.Mode
+import com.example.learnedpatterns.factoryMethodPattern.factoryMethod.typeOfDeliverer.aviation.Traffic
 
-}
+abstract class Aviation(
+    val mode: Mode,
+    val traffic: Traffic
+): Deliverer()
