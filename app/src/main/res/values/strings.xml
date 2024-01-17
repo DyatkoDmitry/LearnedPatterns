@@ -11,4 +11,9 @@
     <string name="kotlin_singleton_sun">Kotlin singleton Sun</string>
     <string name="factory_method">Factory Method</string>
     <string name="factory_method_screen">Factory Method screen:</string>
+    <string name="which_country_to_deliver_to">Which country to deliver to:</string>
+    <string name="russia">Russia</string>
+    <string name="germany">Germany</string>
+    <string name="usa">USA</string>
+    <string name="belarus">Belarus</string>
 </resources>

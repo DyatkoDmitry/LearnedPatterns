@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/factoryMethodScreenTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -18,4 +18,58 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="224dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/factoryMethodScreenTextView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/whichCountryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/which_country_to_deliver_to"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/belarusRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/belarus" />
+
+        <RadioButton
+            android:id="@+id/usaRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usa" />
+
+        <RadioButton
+            android:id="@+id/germanyRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/germany" />
+
+        <RadioButton
+            android:id="@+id/russiaRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/russia" />
+
+        <Button
+            android:id="@+id/getDelivererButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get deliverer"
+            android:visibility="invisible" />
+
+
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
