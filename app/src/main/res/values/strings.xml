@@ -16,4 +16,5 @@
     <string name="germany">Germany</string>
     <string name="usa">USA</string>
     <string name="belarus">Belarus</string>
+    <string name="facade_screen">Facade screen:</string>
 </resources>
