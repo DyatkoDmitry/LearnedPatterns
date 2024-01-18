@@ -7,6 +7,7 @@ import com.example.learnedpatterns.builderPattern.BuilderActivity
 import com.example.learnedpatterns.databinding.ActivityMainBinding
 import com.example.learnedpatterns.facadePattern.FacadeActivity
 import com.example.learnedpatterns.factoryMethodPattern.FactoryMethodActivity
+import com.example.learnedpatterns.observerPattern.ObserverActivity
 import com.example.learnedpatterns.singletonPattern.SingletonActivity
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +38,11 @@ class MainActivity : AppCompatActivity() {
         binding.facadeButton.setOnClickListener {
             val intentFacade = Intent(this, FacadeActivity::class.java)
             startActivity(intentFacade)
+        }
+
+        binding.observerButton.setOnClickListener {
+            val intentObserver = Intent(this, ObserverActivity::class.java)
+            startActivity(intentObserver)
         }
     }
 }

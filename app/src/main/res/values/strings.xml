@@ -18,4 +18,6 @@
     <string name="belarus">Belarus</string>
     <string name="facade_screen">Facade screen:</string>
     <string name="get_user">Get User</string>
+    <string name="observer">Observer</string>
+    <string name="observer_screen">Observer screen:</string>
 </resources>

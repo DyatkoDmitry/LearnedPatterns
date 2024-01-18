@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LearnedPatterns"
         tools:targetApi="31">
         <activity
+            android:name=".observerPattern.ObserverActivity"
+            android:exported="false" />
+        <activity
             android:name=".facadePattern.FacadeActivity"
             android:exported="false" />
         <activity
