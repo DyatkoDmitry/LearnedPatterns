@@ -13,6 +13,12 @@ import com.example.learnedpatterns.observerPattern.interfaces.ScreenManager
 class Fragment2 : Fragment(), Observer {
 
     private var binding: Fragment2Binding? = null
+    private var activityScreenManager: ScreenManager ?= null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        activityScreenManager = activity as ScreenManager
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,12 +35,12 @@ class Fragment2 : Fragment(), Observer {
         binding!!.WeatherValue.text = WeatherObserver.weatherValue.toString()
 
         binding!!.toFirstScreenbutton.setOnClickListener {
-            (activity as ScreenManager).toFirstScreen()
+            activityScreenManager?.toFirstScreen()
             notifyVisibleObserversNames()
         }
 
         binding!!.toThirdScreenbutton.setOnClickListener {
-            (activity as ScreenManager).toThirdScreen()
+            activityScreenManager?.toThirdScreen()
             notifyVisibleObserversNames()
         }
 
@@ -62,6 +68,6 @@ class Fragment2 : Fragment(), Observer {
     }
 
     private fun notifyVisibleObserversNames(){
-        (activity as ScreenManager).notifyVisibleObserversNames()
+        activityScreenManager?.notifyVisibleObserversNames()
     }
 }
