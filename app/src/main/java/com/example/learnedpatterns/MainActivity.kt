@@ -20,29 +20,34 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setButtonsListeners()
+    }
+
+    private fun setButtonsListeners(){
+
         binding.builderButton.setOnClickListener {
-            val intentBuilder = Intent(this, BuilderActivity::class.java)
-            startActivity(intentBuilder)
+            startActivityByClass(BuilderActivity::class.java)
         }
 
         binding.singletonButton.setOnClickListener {
-            val intentSingleton = Intent(this, SingletonActivity::class.java)
-            startActivity(intentSingleton)
+            startActivityByClass(SingletonActivity::class.java)
         }
 
         binding.factoryMethodButton.setOnClickListener {
-            val intentFactoryMethod = Intent(this, FactoryMethodActivity::class.java)
-            startActivity(intentFactoryMethod)
+            startActivityByClass(FactoryMethodActivity::class.java)
         }
 
         binding.facadeButton.setOnClickListener {
-            val intentFacade = Intent(this, FacadeActivity::class.java)
-            startActivity(intentFacade)
+            startActivityByClass(FacadeActivity::class.java)
         }
 
         binding.observerButton.setOnClickListener {
-            val intentObserver = Intent(this, ObserverActivity::class.java)
-            startActivity(intentObserver)
+            startActivityByClass(ObserverActivity::class.java)
         }
+    }
+
+    private fun <T: Class<out AppCompatActivity>> startActivityByClass(activityClass: T){
+        val intent = Intent(this, activityClass)
+        startActivity(intent)
     }
 }
